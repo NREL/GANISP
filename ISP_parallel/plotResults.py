@@ -2,11 +2,10 @@ import numpy as np
 import sys
 sys.path.append('util')
 from plotsUtil import *
+import os
 
-
-#def clipGain(gain,biais):
      
-
+os.makedirs('Figures',exist_ok=True)
 
 filename_ISPKS = 'KS_C_2.5_N_45_eps_0.1'
 filename_ISPL96 = 'L96_C_0.0104_N_64_eps_0.871'
@@ -46,7 +45,7 @@ A = np.load(filename_ISPKS + '.npz')
 plt.plot(levels_KS,A['ispProb'], color='b', linewidth=3,label='GAMS random cloning')
 plt.plot(levels_KS,A['ispProb']+A['ispProbStd'], '--', color='b', linewidth=2)
 plt.plot(levels_KS,A['ispProb']-A['ispProbStd'], '--', color='b', linewidth=2)
-prettyLabels('Q','P',30,'Kuramoto-Sivashinsky')
+prettyLabels('Q','P',18,'Kuramoto-Sivashinsky')
 #plotLegend(25)
 ax = plt.gca()
 ax.set_yscale('log')
@@ -64,7 +63,7 @@ A = np.load(filename_ISPL96 + '.npz')
 plt.plot(levels_L96,A['ispProb'], color='b', linewidth=3,label='GAMS random cloning')
 plt.plot(levels_L96,A['ispProb']+A['ispProbStd'], '--', color='b', linewidth=2)
 plt.plot(levels_L96,A['ispProb']-A['ispProbStd'], '--', color='b', linewidth=2)
-prettyLabels('Q','P',30,'Lorenz 96')
+prettyLabels('Q','P',18,'Lorenz 96')
 #plotLegend(25)
 ax = plt.gca()
 ax.set_yscale('log')

@@ -14,12 +14,25 @@ def plotResult(Result,Sim):
             plt.imshow(Result['uu'][:,:,0],origin='lower',cmap='jet', interpolation='nearest', aspect='auto',extent=[0,Sim['Lx/pi']*np.pi,0,Sim['Tf']])
         if Sim['Simulation name']  == 'L96':
             plt.imshow(Result['uu'][:,:,0],origin='lower',cmap='jet', interpolation='nearest', aspect='auto',extent=[0,Sim['Ndof'],0,Sim['Tf']])
-        prettyLabels('x','t',14)
-        plt.colorbar()
+        plt.locator_params(axis='x', nbins=5)
+        plt.locator_params(axis='y', nbins=5)
+        #plt.colorbar()
+        cbar=plt.colorbar()
+        cbar.set_label(r'$\xi_i$')
+        ax = cbar.ax
+        text = ax.yaxis.label
+        font = matplotlib.font_manager.FontProperties(family='times new roman', weight='bold', size=25)
+        text.set_font_properties(font)
+        for l in cbar.ax.yaxis.get_ticklabels():
+            l.set_weight("bold")
+            l.set_family("serif")
+            l.set_fontsize(18)
+        fig.tight_layout()
+        prettyLabels('x','t',18)
 
         fig=plt.figure()
         plt.plot(Result['tt'], Result['qoiTot'][:,0,:],linewidth=3,color='k')
-        prettyLabels('t','Q',30)
+        prettyLabels('t','Q',18)
         #np.savez('qoiChaotic'+Sim['Simulation name']+'.npz',tt=Result['tt'],qoiTot=Result['qoiTot'][:,0,:])
         
 

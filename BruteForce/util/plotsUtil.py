@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import imageio
+import matplotlib
 
 def prettyLabels(xlabel,ylabel,fontsize,title=None):
     plt.xlabel(xlabel, fontsize=fontsize, fontweight='bold', fontname="Times New Roman")
