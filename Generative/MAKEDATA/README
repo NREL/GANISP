@@ -1,0 +1,3 @@
+make dataset : python main.py inputKS
+
+compute integral time: python mainIntegralTime.py inputKS

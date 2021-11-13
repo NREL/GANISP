@@ -1,0 +1,16 @@
+## RUN
+# L96
+python main.py inputL96 
+# KS
+python main.py inputKS
+# L96FrontBack
+python main.py inputL96FrontBack
+# KSFrontBack
+python main.py inputKSFrontBack
+
+
+
+## TEST
+cd test
+
+bash run.sh

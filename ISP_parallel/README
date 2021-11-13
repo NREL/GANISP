@@ -1,0 +1,9 @@
+run_ISP_KS.sh
+
+run_ISP_L96.sh
+
+LE/run.sh
+
+plotComparisonGANISP.py
+
+plotResults.py
