@@ -15,5 +15,5 @@
 
 <p float="left">
   <img src="readmeImages/prob_l96.png" width="350"/>
-  <img src="readmeImages/prob_kse.png" width="350"/>
+  <img src="readmeImages/prob_ks.png" width="350"/>
 </p>
