@@ -24,6 +24,9 @@ Gives the following result
 `python main.py inputKSFrontBack` : Runs the brute force realizations of the KSE forward for half od
 the time and backward for the second half. Regularized using [Regularization of the backward-in-time Kuramoto–Sivashinsky equation](https://www.sciencedirect.com/science/article/pii/S0377042709008498)
 
+## Parallelization
+
+The code runs multiple independent realizations and is therefore embarassingly parallel. An MPI-parallelization procedure is implemented across realizations.
 
 ## Unit test
 

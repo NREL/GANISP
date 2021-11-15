@@ -17,7 +17,7 @@ Genealogical importance splitting reduces the variance of rare event probability
 
 ## Code description
 
-`BruteForce/` : module that run multiple realizations of the Kuramoto-Sivashinsky equation (KSE) and the Lorenz 96 (L96) equation and compute the CDF of a QoI. MPI-parallelization across the realizations is available.
+`BruteForce/` : module that run multiple realizations of the Kuramoto-Sivashinsky equation (KSE) and the Lorenz 96 (L96) equation and compute the CDF of a QoI.
 
 `Generative/`: module in charge of preparing the data and train a GAN which will ultimately be used for cloning realizations. The GAN is conditioned on the reaction coordinate used to track the realizations. To encourage diversity in the generated samples, the moments of the conditional distribution to sample are computed a priori. Computation of conditional moments and GAN training implementation heavily draw from [Diverse Super-resolution (SR) repository](https://github.com/NREL/diversity_SR/tree/master/diversity_SR). Available for the KSE.
 

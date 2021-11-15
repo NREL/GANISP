@@ -17,3 +17,7 @@
   <img src="readmeImages/prob_l96.png" width="350"/>
   <img src="readmeImages/prob_ks.png" width="350"/>
 </p>
+
+## Parallelization
+
+The code runs multiple independent realizations of the splitting algorithm and is therefore embarassingly parallel. An MPI-parallelization procedure is implemented across realizations of the splitting algorithm.

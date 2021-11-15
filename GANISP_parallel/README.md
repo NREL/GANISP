@@ -12,3 +12,7 @@ The genealogical adaptive multilevel splitting is used with a GAN-based cloning 
   <img src="readmeImages/diff_ganispOpt.png" width="350"/>
   <img src="readmeImages/prob_ganisp.png" width="350"/>
 </p>
+
+## Parallelization
+
+The code runs multiple independent realizations of the splitting algorithm and is therefore embarassingly parallel. An MPI-parallelization procedure is implemented across realizations of the splitting algorithm.
