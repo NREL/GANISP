@@ -25,6 +25,23 @@ Genealogical importance splitting reduces the variance of rare event probability
 
 `GANISP_parallel/`: module that implements the GANISP, with a GAN-assisted cloning method. Available for the KSE. 
 
+# Reference
+
+[Paper (open access)](https://openreview.net/pdf?id=e6k_JgCT1P)
+
+```
+
+@inproceedings{
+hassanaly2022ganisp,
+title={{GANISP}: a {GAN}-assisted Importance {SP}litting Probability Estimator},
+author={Malik Hassanaly and Andrew Glaws and Ryan Nicholas King},
+booktitle={AAAI 2022 Workshop on AI for Design and Manufacturing (ADAM)},
+year={2022},
+url={https://openreview.net/forum?id=e6k_JgCT1P}
+}
+
+```
+
 
 ## Contact
 
