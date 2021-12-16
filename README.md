@@ -25,7 +25,7 @@ Genealogical importance splitting reduces the variance of rare event probability
 
 `GANISP_parallel/`: module that implements the GANISP, with a GAN-assisted cloning method. Available for the KSE. 
 
-# Reference
+## Reference
 
 [Paper (open access)](https://openreview.net/pdf?id=e6k_JgCT1P)
 
